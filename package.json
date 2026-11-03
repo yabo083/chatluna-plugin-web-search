@@ -1,0 +1,35 @@
+{
+  "name": "chatluna-plugin-web-search",
+  "version": "0.1.0",
+  "description": "Shared web-search service for ChatLuna v2: ctx.search provider registry (DeepSeek / Tavily / plain fetch), BYOK, daily quota, plus web_search / web_fetch tools",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./providers": "./src/providers.js",
+    "./service": "./src/service.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "cordis",
+    "plugin",
+    "chatluna",
+    "web-search",
+    "web-fetch",
+    "tavily",
+    "deepseek"
+  ],
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yabo083/chatluna-plugin-web-search"
+  },
+  "peerDependencies": {
+    "@satorijs/core": "^3.0.0",
+    "cordis": "^4.0.0"
+  }
+}
